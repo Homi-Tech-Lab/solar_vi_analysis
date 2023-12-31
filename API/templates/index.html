@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fault Detection Model</title>
+</head>
+<body>
+    <h1>1.8KW Grid-type PV System</h1>
+    <form action="/predict" method="post">
+        <label for="sensor1">Sensor1 (Amps):</label>
+        <input type="text" name="sensor1" id="sensor1" required><br>
+
+        <label for="sensor2">Sensor2 (Amps):</label>
+        <input type="text" name="sensor2" id="sensor2" required><br>
+
+        <label for="sensor3">Sensor3 (Volts):</label>
+        <input type="text" name="sensor3" id="sensor3" required><br>
+
+        <label for="sensor4">Sensor4 (Volts):</label>
+        <input type="text" name="sensor4" id="sensor4" required><br>
+
+        <label for="irradiance">Irradiance (Klux):</label>
+        <input type="text" name="irradiance" id="irradiance" required><br>
+
+        <label for="temperature">Temperature (degC):</label>
+        <input type="text" name="temperature" id="temperature" required><br>
+
+        <label for="sunny">Sunny (yes:'0' no:'1'):</label>
+        <input type="text" name="sunny" id="sunny" required><br>
+
+        <input type="submit" value="Diagnose">
+    </form>
+
+    <!-- Display the predicted result here -->
+    <div id="prediction-result"></div>
+
+    <script>
+        // Optionally, you can add JavaScript to update the result dynamically.
+        // For simplicity, this example uses plain HTML. You can enhance it with JavaScript as needed.
+    </script>
+</body>
+</html>
